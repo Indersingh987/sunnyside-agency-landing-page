@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <title>Sunnyside agency landing page</title>
+  <script >
+    function menu(){
+      let div = document.getElementById('menu');
+      if(div.className == "menu"){
+        div.className = "menu display"
+      }else{
+        div.className = "menu"
+      }
+      let div2 = document.getElementById('triangle');
+      if(div2.className == "triangle"){
+        div2.className = "triangle display"
+      }else{
+        div2.className = "triangle"
+      }
+    }
+  </script>
+
+  
+</head>
+<body class="background">
+  <container class="container">
+    <nav class="navbar">
+      <div class="nav-container">
+        <div id="brand">sunnyside</div>
+        <ul>
+          <li >About</li>
+          <li>Services</li>
+          <li>Projects</li>
+          <li class="select">contact</li>
+        </ul>
+        <i class="fa fa-bars icon" onclick="menu()" id="toggle"></i>
+      </div>
+    </nav>
+    <div class="menu" id="menu">
+      <a>About</a>
+      <a>Services</a>
+      <a>Projects</a>
+      <a class = "select2">Contact</a>
+    </div>
+    <div class = "triangle" id="triangle"></div>
+
+    <section class="s1">
+      <h1>We are creatives</h1>
+      <img src="images/icon-arrow-down.svg">
+    </section>
+
+    <section class="s2 reverse">
+      <div class="about">
+        <h2>Transform your brand</h2>
+        <p>We are a full-service creative agency specializing in helping brands grow fast.Engage your clients through compelling visuals that do most of the marketing for you.</p>
+        <a href="#">LEARN MORE</a>
+      </div>
+      <img class="image" src="images/desktop/image-transform.jpg"></img>
+    </section>
+
+    <section class="s2">
+      <img class="image" src="images/desktop/image-stand-out.jpg"></img>
+      <div class="about">
+        <h2> Stand out to the right audience</h2>
+        <p>  Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.</p>
+        <a href="#">LEARN MORE</a>
+      </div>
+    </section>
+    
+    <section class="s2">
+      <div class="service gd">
+        <h3>Graphic design</h3>
+        <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
+      </div>
+      <div class="service pg">
+        <h3>Photography</h3>
+        <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+      </div>
+    </section>
+
+    <section class="s3">
+      <h2>  CLIENTS TESTIMONIALS</h2>
+      <div class="card-container">
+        <div class="card">
+          <img src="images/image-emily.jpg">
+          <p>We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+          <footer>
+            <h3>Emily R.</h3>
+            <span>Marketing Director</span>
+          </footer>
+        </img>
+        <div class="card">
+          <img src="images/image-thomas.jpg">
+          <p>We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+          <footer>
+            <h3>Thomas S.</h3>
+            <span>Chief Operating Officer</span>
+          </footer>
+        </div>
+        <div class="card">
+          <img src="images/image-jennie.jpg">
+          <p>  Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+          <footer>
+            <h3>Jennie F.</h3>
+            <span>Business Owner</span>
+          </footer>
+        </div>
+      </div>
+    </section>
+
+    <section class="s4">
+      <div>
+        <img src="images/desktop/image-gallery-milkbottles.jpg">
+        <img src="images/desktop/image-gallery-orange.jpg">
+      </div>
+      <div>
+        <img src="images/desktop/image-gallery-cone.jpg">
+        <img src="images/desktop/image-gallery-sugarcubes.jpg">
+      </div>
+    </section>
+
+    <section class="s5">
+      <div class="footer-card">
+          <h2>Sunnyside</h2>
+          <div>
+            <li>About</li>
+            <li>Services</li>
+            <li>Projects</li>
+          </div>
+          <div>
+            <img src="images/icon-facebook.svg">
+            <img src="images/icon-instagram.svg">
+            <img src="images/icon-twitter.svg">
+            <img src="images/icon-pinterest.svg">
+          </div>
+      </div>
+    </section>
+  </container>
+</body>
+</html>
